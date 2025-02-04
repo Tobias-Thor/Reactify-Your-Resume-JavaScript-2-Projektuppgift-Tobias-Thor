@@ -1,0 +1,34 @@
+/* Home section container */
+.home {
+  padding: 2rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Heading styles */
+.home h1 {
+  font-size: 2.5rem;
+  color: #222;
+  font-weight: bold;
+}
+
+/* Paragraph styles */
+.home p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .home {
+    padding: 1rem;
+  }
+  .home h1 {
+    font-size: 2rem;
+  }
+  .home p {
+    font-size: 1rem;
+  }
+}

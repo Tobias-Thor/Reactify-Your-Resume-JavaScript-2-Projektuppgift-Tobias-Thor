@@ -1,0 +1,44 @@
+/* Styling for the profile image */
+.profile-image {
+  display: block;
+  margin: 20px auto;
+  border-radius: 50%;
+}
+
+/* Styling for Strengths and Languages */
+.strengths, .languages {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.strengths h3, .languages h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.strengths blockquote, .languages blockquote {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #444;
+}

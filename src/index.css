@@ -1,0 +1,49 @@
+/* Återställ grundläggande stilar för bättre konsistens mellan webbläsare */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Gör så att hela sidan tar upp minst hela höjden */
+  html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+    color: black;
+  }
+  
+  /* Centrera innehållet och ge det en maxbredd */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Enkel styling för rubriker */
+  h1, h2, h3 {
+    margin-bottom: 10px;
+  }
+  
+  /* Styling för länkar */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Flexibel layout för att hålla footern längst ner */
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+  }
+  

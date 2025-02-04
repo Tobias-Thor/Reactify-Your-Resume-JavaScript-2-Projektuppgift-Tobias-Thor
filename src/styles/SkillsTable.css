@@ -1,0 +1,28 @@
+/* Basic styling for the table */
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .skills-table th,
+  .skills-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .skills-table th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Zebra striping for table rows */
+  .skills-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Hover effect for rows */
+  .skills-table tbody tr:hover {
+    background-color: #e6f7ff;
+  }
+  
