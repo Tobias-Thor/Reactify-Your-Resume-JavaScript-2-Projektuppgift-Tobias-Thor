@@ -34,7 +34,7 @@ function App() {
     ]
   };
 
-  // Data for the footer links
+  // Data for the Footer component
   const footerData = {
     youtube: "https://www.youtube.com/@TobiasThor-i6d",
     github: "https://github.com/Tobias-Thor",
@@ -43,9 +43,17 @@ function App() {
     copyrightOwner: "Tobias Thor"
   };
 
+  // Data for navigation links in Header
+  const navLinks = [
+    { name: "Hem", path: "/" },
+    { name: "Om mig", path: "/about" },
+    { name: "Projekt", path: "/projects" },
+    { name: "Kontakt", path: "/contact" }
+  ];
+
   return (
     <Provider store={store}>
-      <Header /> {/* The Header component that appears at the top of the page */}
+      <Header navLinks={navLinks} /> {/* Passing navLinks as a prop */}
       <main>
         <Routes>
           <Route 
@@ -61,10 +69,11 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
-      <Footer footerData={footerData} /> {/* Pass footerData as prop to Footer */}
+      <Footer footerData={footerData} /> {/* Pass footerData as prop */}
     </Provider>
   );
 }
 
 export default App;
+
 
