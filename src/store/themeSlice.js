@@ -5,7 +5,7 @@ const initialState = {
   darkMode: false,
 };
 
-// Creating the theme slice using createSlice, which automatically generates actions and reducers
+// Creating the theme-slice using createSlice, which automatically generates actions and reducers
 const themeSlice = createSlice({
   name: "theme", // Name of the slice 
   initialState, // The initial state defined above
