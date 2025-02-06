@@ -1,17 +1,17 @@
 import { FaYoutube, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"; // Import icons from react-icons
-import "./../styles/Footer.css"; 
+import "../styles/Footer.css";
 
-const Footer = () => {
+const Footer = ({ footerData }) => { // Receive footerData prop
   return (
     <footer className="footer">
       {/* Copyright text with dynamic year */}
-      <p>© Copyright och Upphovsrätt Tobias Thor {new Date().getFullYear()} Min Portfolio</p>
+      <p>© Copyright och Upphovsrätt {footerData.copyrightOwner} {new Date().getFullYear()} Min Portfolio</p>
 
       {/* Social media icons section */}
       <section className="icon-container">
         {/* YouTube link */}
         <a
-          href="https://www.youtube.com/@TobiasThor-i6d"
+          href={footerData.youtube}
           target="_blank"
           rel="noopener noreferrer" // Security measure
           className="icon"
@@ -22,7 +22,7 @@ const Footer = () => {
 
         {/* GitHub link */}
         <a
-          href="https://github.com/Tobias-Thor"
+          href={footerData.github}
           target="_blank"
           rel="noopener noreferrer" // Security measure
           className="icon"
@@ -33,7 +33,7 @@ const Footer = () => {
 
         {/* LinkedIn link */}
         <a
-          href="https://www.linkedin.com/in/tobias-thor-810215182/"
+          href={footerData.linkedin}
           target="_blank"
           rel="noopener noreferrer" // Security measure
           className="icon"
@@ -44,7 +44,7 @@ const Footer = () => {
 
         {/* Email link */}
         <a
-          href="mailto:tobiasthor@protonmail.com"
+          href={footerData.email}
           className="icon"
           aria-label="Skicka e-post till mig"
         >
@@ -55,5 +55,5 @@ const Footer = () => {
   );
 };
 
-// Export the Footer component
 export default Footer;
+
