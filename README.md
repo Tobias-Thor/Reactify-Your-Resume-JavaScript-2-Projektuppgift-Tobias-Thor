@@ -23,11 +23,12 @@ Detta projekt är en interaktiv och responsiv single-page application (SPA) bygg
 ## Installation & Körning
 1. Klona detta repository:
    ```sh
-   git clone https://github.com/Tobias-Thor/Reactify-Your-Resume.git
+   git clone https://github.com/Tobias-Thor/Reactify-Your-Resume-JavaScript-2-Projektuppgift-Tobias-Thor.git
+
    ```
 2. Navigera till projektmappen:
    ```sh
-   cd Reactify-Your-Resume
+   cd Reactify-Your-Resume-JavaScript-2-Projektuppgift-Tobias-Thor
    ```
 3. Installera beroenden:
    ```sh
@@ -72,11 +73,11 @@ This project is an interactive and responsive single-page application (SPA) buil
 ## Installation & Running
 1. Clone this repository:
    ```sh
-   git clone https://github.com/Tobias-Thor/Reactify-Your-Resume.git
+   git clone https://github.com/Tobias-Thor/Reactify-Your-Resume-JavaScript-2-Projektuppgift-Tobias-Thor.git
    ```
 2. Navigate to the project folder:
    ```sh
-   cd Reactify-Your-Resume
+   cd Reactify-Your-Resume-JavaScript-2-Projektuppgift-Tobias-Thor
    ```
 3. Install dependencies:
    ```sh
