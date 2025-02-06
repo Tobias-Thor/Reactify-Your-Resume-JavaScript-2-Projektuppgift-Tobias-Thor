@@ -1,32 +1,23 @@
 import { useState } from "react";
-import "./../styles/Contact.css"; 
 
-const ContactForm = () => {
-  // State variables to store user input
-  const [name, setName] = useState("");
+const ContactForm = ({ userName }) => {
+  // Initialize the 'name' state with the value from the props (userName)
+  const [name, setName] = useState(userName || "");
   const [message, setMessage] = useState("");
 
-  // Function to handle form submission
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevents page reload
-
-    // Validation: Ensure both fields are filled before submitting
+    e.preventDefault();
     if (!name.trim() || !message.trim()) {
       alert("Var god och fyll i både namn och meddelande, tack.");
       return;
     }
-
-    // Display submitted data
     alert(`Meddelande skickat!\n\nNamn: ${name}\nMeddelande: ${message}`);
-
-    // Reset the form fields after submission
-    setName("");
-    setMessage("");
+    setName("");  // Clear name field
+    setMessage("");  // Clear message field
   };
 
   return (
     <form onSubmit={handleSubmit} className="contact-form">
-      {/* Name input field */}
       <label htmlFor="name">Ditt namn:</label>
       <input
         id="name"
@@ -35,10 +26,7 @@ const ContactForm = () => {
         onChange={(e) => setName(e.target.value)}
         placeholder="Skriv in ditt namn här"
         required
-        className="input-field"
       />
-
-      {/* Message textarea field */}
       <label htmlFor="message">Ditt meddelande:</label>
       <textarea
         id="message"
@@ -46,11 +34,8 @@ const ContactForm = () => {
         onChange={(e) => setMessage(e.target.value)}
         placeholder="Skriv in ditt meddelande här"
         required
-        className="textarea-field"
       ></textarea>
-
-      {/* Submit button */}
-      <button type="submit" className="submit-button">Skicka in</button>
+      <button type="submit">Skicka in</button>
     </form>
   );
 };
