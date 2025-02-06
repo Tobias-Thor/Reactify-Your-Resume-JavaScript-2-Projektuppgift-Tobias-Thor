@@ -10,7 +10,7 @@ import Contact from "./pages/Contact";
 import "./App.css";
 
 function App() {
-  // Data to pass as props to Home component
+  // Data for the Home page
   const homeData = {
     title: "Välkommen till min Portfolio",
     intro: "Jag är en blivande junior front-end-utvecklare med erfarenhet av:",
@@ -34,33 +34,37 @@ function App() {
     ]
   };
 
+  // Data for the footer links
+  const footerData = {
+    youtube: "https://www.youtube.com/@TobiasThor-i6d",
+    github: "https://github.com/Tobias-Thor",
+    linkedin: "https://www.linkedin.com/in/tobias-thor-810215182/",
+    email: "mailto:tobiasthor@protonmail.com",
+    copyrightOwner: "Tobias Thor"
+  };
+
   return (
-    <>
-      <Provider store={store}>
-        <Header /> {/* The Header component that appears at the top of the page */}
-        <main>
-          {/* Routes component to define different routes in the app */}
-          <Routes>
-            <Route 
-              path="/" 
-              element={<Home 
-                title={homeData.title} 
-                intro={homeData.intro} 
-                skills={homeData.skills} 
-              />} 
-            />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
-        <Footer /> {/* The Footer component that appears at the bottom of the page */}
-      </Provider>
-    </>
+    <Provider store={store}>
+      <Header /> {/* The Header component that appears at the top of the page */}
+      <main>
+        <Routes>
+          <Route 
+            path="/" 
+            element={<Home 
+              title={homeData.title} 
+              intro={homeData.intro} 
+              skills={homeData.skills} 
+            />} 
+          />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+      <Footer footerData={footerData} /> {/* Pass footerData as prop to Footer */}
+    </Provider>
   );
 }
 
 export default App;
 
-
-export default App; // Exporting the App component to be used in other parts of the app
