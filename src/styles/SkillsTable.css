@@ -1,28 +1,39 @@
-/* Basic styling for the table */
+/* Basic styling for table */
 .skills-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Table-head */
+.skills-table thead {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+/* Cells */
+.skills-table th,
+.skills-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Alternating background-colors for better readability and general "niceness*/
+.skills-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.skills-table tbody tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+/* For mobile screens */
+@media (max-width: 600px) {
+  .skills-table {
+    font-size: 14px;
   }
-  
-  .skills-table th,
-  .skills-table td {
-    padding: 12px;
-    text-align: left;
-    border: 1px solid #ddd;
-  }
-  
-  .skills-table th {
-    background-color: #f2f2f2;
-  }
-  
-  /* Zebra striping for table rows */
-  .skills-table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  /* Hover effect for rows */
-  .skills-table tbody tr:hover {
-    background-color: #e6f7ff;
-  }
-  
+}

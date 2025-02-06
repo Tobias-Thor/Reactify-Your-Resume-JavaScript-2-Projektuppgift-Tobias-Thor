@@ -1,6 +1,6 @@
-/* Grundläggande stilar */
+/* Basic styles */
 body {
-  background-color: white;
+  background-color: whitesmoke;
   color: black;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -10,35 +10,34 @@ body {
   flex-direction: column;
 }
 
-/* Se till att main fyller ut sidan */
+/* Make sure main fills the page */
 main {
   flex: 1;
   padding: 20px;
-  border: 1px solid red; /* Add a border for debugging */
 }
 
-/* Centrera text och layout */
+/* Centering text and layout */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Enkel styling för Header och Footer */
+/* Styling for Header and Footer */
 header, footer {
   background-color: #333;
-  color: white;
+  color: whitesmoke;
   text-align: center;
   padding: 10px 0;
-  border: 1px solid green; /* Add a border for debugging */
+  /* border: 1px solid green; Add a border for debugging */
 }
 
-/* Länkar */
+/* Links */
 a {
   color: #007bff;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }

@@ -1,16 +1,19 @@
 /* Styling for the profile image */
 .profile-image {
   display: block;
-  margin: 20px auto;
-  border-radius: 50%;
+  margin: 10px auto;
+  border-radius: 3%;
+  max-width: 100%; /* Makes image responsive */
+  height: auto; /* Keeps proportions */
 }
 
 /* Styling for Strengths and Languages */
 .strengths, .languages {
   margin: 20px 0;
   padding: 15px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: wheat;
+  border: 1.5px solid darkgray;
+  border-radius: 5px;
 }
 
 .strengths h3, .languages h3 {
@@ -21,12 +24,16 @@
 .strengths blockquote, .languages blockquote {
   margin-top: 10px;
   font-style: italic;
+  background-color: wheat;
   color: #555;
+  border-radius: 2px;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+  font-weight: 500;
+  font-style: oblique;
 }
 
 ul li {
@@ -36,9 +43,19 @@ ul li {
 h3 {
   font-size: 1.6rem;
   color: #333;
+  text-align: center;
 }
 
 h2 {
   font-size: 1.8rem;
   color: #444;
+  text-align: center;
+}
+
+.about {
+    text-align: center;
+}
+
+p {
+  font-weight: normal;
 }

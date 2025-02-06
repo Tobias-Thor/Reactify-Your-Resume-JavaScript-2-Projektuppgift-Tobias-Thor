@@ -1,21 +1,21 @@
 import { FaYoutube, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"; // Import icons from react-icons
-import "./../styles/Footer.css"; // Import CSS stylesheet
+import "./../styles/Footer.css"; 
 
 const Footer = () => {
   return (
-    <footer style={styles.footer}>
+    <footer className="footer">
       {/* Copyright text with dynamic year */}
-      <p>© Copyright och Upphovsrätt Tobias Thor{new Date().getFullYear()} My Portfolio</p>
+      <p>© Copyright och Upphovsrätt Tobias Thor {new Date().getFullYear()} Min Portfolio</p>
 
       {/* Social media icons section */}
-      <section style={styles.iconContainer}>
+      <section className="icon-container">
         {/* YouTube link */}
         <a
           href="https://www.youtube.com/@TobiasThor-i6d"
           target="_blank"
-          rel="noopener noreferrer"
-          style={styles.icon}
-          aria-label="Visit my YouTube channel"
+          rel="noopener noreferrer" // Security measure
+          className="icon"
+          aria-label="Besök min YouTube-kanal"
         >
           <FaYoutube />
         </a>
@@ -24,9 +24,9 @@ const Footer = () => {
         <a
           href="https://github.com/Tobias-Thor"
           target="_blank"
-          rel="noopener noreferrer"
-          style={styles.icon}
-          aria-label="Visit my GitHub profile"
+          rel="noopener noreferrer" // Security measure
+          className="icon"
+          aria-label="Besök min GitHub-profil"
         >
           <FaGithub />
         </a>
@@ -35,9 +35,9 @@ const Footer = () => {
         <a
           href="https://www.linkedin.com/in/tobias-thor-810215182/"
           target="_blank"
-          rel="noopener noreferrer"
-          style={styles.icon}
-          aria-label="Visit my LinkedIn profile"
+          rel="noopener noreferrer" // Security measure
+          className="icon"
+          aria-label="Besök min LinkedIn-profil"
         >
           <FaLinkedin />
         </a>
@@ -45,8 +45,8 @@ const Footer = () => {
         {/* Email link */}
         <a
           href="mailto:tobiasthor@protonmail.com"
-          style={styles.icon}
-          aria-label="Send me an email"
+          className="icon"
+          aria-label="Skicka e-post till mig"
         >
           <FaEnvelope />
         </a>

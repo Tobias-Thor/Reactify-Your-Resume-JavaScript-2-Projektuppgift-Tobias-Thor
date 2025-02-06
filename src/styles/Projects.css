@@ -14,13 +14,13 @@
   margin-bottom: 1rem;
 }
 
-/* Project list */
+/* Project-list */
 .projects ul {
   list-style: none;
   padding: 0;
 }
 
-/* Individual project item */
+/* Individual project-item */
 .project-item {
   background: #f9f9f9;
   padding: 1rem;
@@ -69,18 +69,18 @@
   background-color: #0056b3;
 }
 
-/* Hover effect */
+/* Hover-effect */
 .project-item:hover {
   transform: scale(1.02);
 }
 
-/* Project name */
+/* Project-name */
 .project-item h2 {
   font-size: 1.5rem;
   color: #333;
 }
 
-/* Project description */
+/* Project-description */
 .project-item p {
   font-size: 1rem;
   color: #555;

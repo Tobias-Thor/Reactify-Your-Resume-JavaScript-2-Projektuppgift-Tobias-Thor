@@ -1,27 +1,41 @@
-/* Card container */
+/* Basic styling for the project-card component */
 .project-card {
-    background: #f9f9f9;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  /* Hover effect */
-  .project-card:hover {
-    transform: scale(1.02);
-  }
-  
-  /* Project title */
-  .project-card h2 {
-    font-size: 1.5rem;
-    color: #333;
-  }
-  
-  /* Project description */
-  .project-card p {
-    font-size: 1rem;
-    color: #555;
-  }
-  
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Project-image */
+.project-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Project-links */
+.project-links {
+  margin-top: 10px;
+}
+
+.project-links a {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.project-links a:hover {
+  background-color: #0056b3;
+}

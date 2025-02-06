@@ -1,20 +1,26 @@
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #222;
-    color: white;
-  }
-  
-  footer a {
-    margin: 0 10px;
-    font-size: 24px;
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  /* Add hover effect */
-  footer a:hover {
-    color: #f39c12; /* Changes color on hover (Orange shade) */
-  }
-  
+/* Footer styling */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+}
+
+/* Container for icons */
+.icon-container {
+  margin-top: 10px;
+}
+
+/* Styling for each icon */
+.icon {
+  margin: 0 10px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.icon:hover {
+  color: #f39c12; /* Changes color on hover (Orange shade) */
+}

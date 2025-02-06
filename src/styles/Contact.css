@@ -1,60 +1,58 @@
-/* Container styles for the contact section */
-.contact {
-  padding: 2rem;
-  text-align: center;
-  max-width: 600px; /* Limits width for better readability */
-  margin: 0 auto; /* Centers the form */
+/* Styling for contact-form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
 }
 
-/* Input fields and textarea styling */
-.contact input,
-.contact textarea {
-  width: 100%; /* Ensures full width inside the container */
-  margin: 0.5rem 0;
-  padding: 0.75rem; /* Slightly larger padding for better UX */
+/* Input and textarea */
+.input-field,
+.textarea-field {
+  width: 100%;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 16px; /* Improves readability */
-  box-sizing: border-box; /* Prevents width issues */
+  font-size: 16px;
 }
 
-/* Ensures textarea has a reasonable height */
-.contact textarea {
-  height: 120px; /* Provides more space for messages */
-  resize: vertical; /* Allows users to resize if needed */
+/* Specific styling for the textarea */
+.textarea-field {
+  height: 100px;
+  resize: vertical;
 }
 
-/* Button styling */
-.contact button {
-  background-color: #2ecc71;
+/* Send-button */
+.submit-button {
+  padding: 10px 15px;
+  background-color: #007bff;
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem; /* More padding for better touch interaction */
+  border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 5px;
   transition: background-color 0.3s ease-in-out;
 }
 
-/* Button hover effect */
-.contact button:hover {
-  background-color: #27ae60; /* Darker green for hover effect */
+/* Applying a hover-effect */
+.submit-button:hover {
+  background-color: #0056b3;
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 480px) {
-  .contact {
-      padding: 1rem;
-  }
-
-  .contact input,
-  .contact textarea {
-      font-size: 14px; /* Adjust font size for small screens */
-  }
-
-  .contact button {
-      font-size: 14px; /* Smaller button text for better spacing */
-  }
+h1 {
+  text-align: center;
 }
 
-  
+p {
+  font-style: oblique;
+}
+
+.address {
+  text-align: center;
+}

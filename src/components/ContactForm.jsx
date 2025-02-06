@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./../styles/Contact.css"; // Imports CSS-stylesheet
+import "./../styles/Contact.css"; 
 
 const ContactForm = () => {
   // State variables to store user input
@@ -12,12 +12,12 @@ const ContactForm = () => {
 
     // Validation: Ensure both fields are filled before submitting
     if (!name.trim() || !message.trim()) {
-      alert("Please fill in both name and message.");
+      alert("Var god och fyll i både namn och meddelande, tack.");
       return;
     }
 
-    // Display submitted data (replace this with actual form handling logic)
-    alert(`Message sent!\n\nName: ${name}\nMessage: ${message}`);
+    // Display submitted data
+    alert(`Meddelande skickat!\n\nNamn: ${name}\nMeddelande: ${message}`);
 
     // Reset the form fields after submission
     setName("");
@@ -25,7 +25,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={styles.form}>
+    <form onSubmit={handleSubmit} className="contact-form">
       {/* Name input field */}
       <label htmlFor="name">Ditt namn:</label>
       <input
@@ -35,7 +35,7 @@ const ContactForm = () => {
         onChange={(e) => setName(e.target.value)}
         placeholder="Skriv in ditt namn här"
         required
-        style={styles.input}
+        className="input-field"
       />
 
       {/* Message textarea field */}
@@ -46,14 +46,13 @@ const ContactForm = () => {
         onChange={(e) => setMessage(e.target.value)}
         placeholder="Skriv in ditt meddelande här"
         required
-        style={styles.textarea}
+        className="textarea-field"
       ></textarea>
 
       {/* Submit button */}
-      <button type="submit" style={styles.button}>Skicka in</button>
+      <button type="submit" className="submit-button">Skicka in</button>
     </form>
   );
 };
-
 
 export default ContactForm;

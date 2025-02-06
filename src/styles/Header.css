@@ -1,59 +1,60 @@
-/* Header container */
+/* Basic styling for the header */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: white;
-    color: black;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-  }
-  
-  /* Dark mode styles */
-  .header.dark {
-    background: #333;
-    color: white;
-  }
-  
-  /* Navigation styles */
-  .nav {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  /* Link styles */
-  .nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .header.dark .nav a {
-    color: white;
-  }
-  
-  /* Theme toggle button */
-  .theme-toggle {
-    background: #ddd;
-    color: #333;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s ease-in-out;
-  }
-  
-  .header.dark .theme-toggle {
-    background: #555;
-    color: white;
-  }
-  
-  .theme-toggle:hover {
-    background: #ccc;
-  }
-  
-  .header.dark .theme-toggle:hover {
-    background: #777;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: wheat;
+  border-bottom: 2px solid wheat;
+}
+
+/* Dark theme */
+.header.dark {
+  background-color: #333;
+  color: white;
+  border-bottom: 2px solid #555;
+}
+
+/* Navigation-links */
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.header.dark .nav a {
+  color: white;
+}
+
+.nav a:hover {
+  color: #007bff;
+}
+
+/* Thema-button */
+.theme-toggle {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.header.dark .theme-toggle {
+  background-color: #555;
+}
+
+.theme-toggle:hover {
+  background-color: #0056b3;
+}
+
+.header.dark .theme-toggle:hover {
+  background-color: #777;
+}

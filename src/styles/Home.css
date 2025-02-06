@@ -20,6 +20,10 @@
   line-height: 1.6;
 }
 
+.skills {
+  font-style: oblique;
+}
+
 /* Responsive design for smaller screens */
 @media (max-width: 600px) {
   .home {

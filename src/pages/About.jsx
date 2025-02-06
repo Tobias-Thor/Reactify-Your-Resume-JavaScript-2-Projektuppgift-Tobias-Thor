@@ -1,27 +1,26 @@
-import "./../styles/About.css"; // Import external CSS file for styling
 import SkillsTable from "../components/SkillsTable"; // Import the SkillsTable component
+import "./../styles/About.css"; 
 
 const About = () => {
   return (
     <section className="about">
-      <h1>Om mig</h1>
+      <h1>Om mig</h1><br></br>
       <p>
         Jag heter Tobias Thor och studerar till front-end-utvecklare på 
         KYH Yrkeshögskola och är sedan tidigare utbildad IT-tekniker. 
         Innan dess jobbade jag som städare i cirka 20 år, varav flera av 
         åren även som restaurangbiträde inom skolmat.
-      </p>
+      </p><br></br>
 
-      {/* Placeholder for Image */}
+      {/* for "selfie" image */}
       <img 
-        src="path/to/your-image.jpg" 
+        src="./images/90909-500px.png" 
         alt="Tobias Thor" 
         className="profile-image" 
-        style={{ width: "200px", borderRadius: "50%" }} // Add CSS or inline styling
-      />
+      /><br></br>
 
       <h2>Mina kompetenser</h2>
-      <SkillsTable /> {/* Using the SkillsTable component here */}
+      <SkillsTable /> {/* Using the SkillsTable component here */}<br></br>
 
       <h2>Mitt CV</h2>
       
@@ -30,29 +29,37 @@ const About = () => {
         <h3>Utbildning</h3>
         <ul>
           <li>
-            <strong>Front End Developer (pågående) 2024 – 2026</strong><br />
-            KYH Yrkeshögskola
+            <p>Front End Developer (pågående) 2024 – 2026</p>
+            <p>KYH Yrkeshögskola</p><br></br>
+            <p>Kurser avklarade innan LIA:</p><br></br>
             <ul>
-              <li>Kurser avklarade innan LIA:</li>
-              <li>Arbetsmetodik 1-2, Jämlikhet i arbetslivet</li>
-              <li>HTML & CSS, JavaScript 1-3, UX och Grafisk design</li>
-              <li>Back-end-utveckling, Front-end-projekt</li>
+              <li>Arbetsmetodik 1-2</li> 
+              <li>Jämlikhet i arbetslivet</li>
+              <li>HTML & CSS</li>
+              <li>JavaScript 1-3</li> 
+              <li>UX och Grafisk design</li>
+              <li>Back-end-utveckling</li>
+              <li>Front-end-projekt</li>
             </ul>
-          </li>
+          </li><br></br>
           <li>
-            <strong>IT-tekniker-utbildning 2023 - 2024</strong><br />
-            Läroviken och SDCA
+            <p>IT-tekniker-utbildning 2023-2024</p>
+            <p>Läroviken och SDCA</p><br></br>
+            <p>Avslutade kurser:</p><br></br>
             <ul>
-              <li>Avslutade kurser:</li>
-              <li>Datorteknik 1b, Dator-och nätverksteknik</li>
-              <li>Digital kommunikationsteknik, Datorsamordning och support</li>
-              <li>Nätverksadministration, Administration av nätverks- och serverutrustning</li>
-              <li>Nätverkssäkerhet, 5 veckors APL på SDCA</li>
+              <li>Datorteknik 1b</li>
+              <li>Dator-och nätverksteknik</li>
+              <li>Digital kommunikationsteknik</li>
+              <li>Datorsamordning och support</li>
+              <li>Nätverksadministration</li>
+              <li>Administration av nätverks- och serverutrustning</li>
+              <li>Nätverkssäkerhet</li>
+              <li>(5 veckors APL på SDCA)</li>
             </ul>
-          </li>
+          </li><br></br>
           <li>
-            <strong>Lösa kurser 2023-2026</strong><br />
-            NTI-skolan och Hermods
+            <p>Lösa kurser 2023-2026</p>
+            <p>NTI-skolan och Hermods</p><br></br>
             <ul>
               <li>Teknik 1 (pågående)</li>
               <li>Webbserverprogrammering 1 (PHP, SQL)</li>
@@ -61,41 +68,41 @@ const About = () => {
               <li>Programmering 1 (C#)</li>
               <li>Datorteknik 1a (bla om GNU/Linux)</li>
             </ul>
-          </li>
+          </li><br></br>
           <li>
-            <strong>Kockutbildning AVBRUTEN PGA AV SJUKDOM februari 2023-april 2023</strong><br />
-            Läroviken (fd. CVL)
+            <p>Kockutbildning AVBRUTEN PGA AV SJUKDOM februari 2023-april 2023</p>
+            <p>Läroviken (fd. CVL)</p>
           </li>
         </ul>
-      </section>
+      </section><br></br>
 
       {/* Work Experience Section */}
       <section>
         <h3>Arbetslivserfarenhet (2003-2023)</h3>
         <ul>
           <li>
-            <strong>Städare/Lokalvårdare</strong><br />
+            Städare/Lokalvårdare
             Gävle Kommun, Sodexo, Forenede Service
             <ul>
               <li>Cirka 20 års erfarenhet av service</li>
             </ul>
           </li>
           <li>
-            <strong>Restaurangbiträde (skolmat, flera av åren)</strong><br />
+            Restaurangbiträde (skolmat, flera av åren)
             Gävle Kommun, Sodexo, Forenede Service
           </li>
         </ul>
-      </section>
+      </section><br></br>
 
       {/* Other Information */}
       <section>
         <h3>Övriga upplysningar</h3>
-        <p>Jag har ej körkort men goda möjligheter att pendla vid behov.</p>
-      </section>
+        <p>Jag har ej körkort men har goda möjligheter att pendla vid behov.</p>
+      </section><br></br>
 
       {/* Strengths Section */}
       <aside className="strengths">
-        <h3>Styrkor</h3>
+        <h3>Mina styrkor</h3>
         <blockquote>
           <ul>
             <li>Lugn</li>
