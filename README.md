@@ -40,8 +40,6 @@ react-icons
 ## Bygga för produktion
 För att skapa en produktionsfärdig build (OM DU VILL), kör:
 sh
-Kopiera
-Redigera
 npm run build
 Detta genererar en build-mapp med optimerad kod redo att distribueras.
 
@@ -103,8 +101,6 @@ Before getting started, make sure you have the following installed:
 
 ## Install necessary dependencies
 sh
-Kopiera
-Redigera
 npm install
 
 ## This project uses the following packages:
@@ -119,8 +115,6 @@ react-icons
 ## Build for Production
 To create a production-ready build (IF YOU WANT TO), run:
 sh
-Kopiera
-Redigera
 npm run build
 This will generate a build folder with optimized code ready for deployment.
 
