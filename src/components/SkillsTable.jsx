@@ -24,3 +24,4 @@ const SkillsTable = ({ skills }) => {
 };
 
 export default SkillsTable;
+

@@ -37,7 +37,7 @@
     text-decoration: none;
   }
   
-  /* Flexibel layout to hold footer at the bottom*/
+  /* Flexible layout to hold the footer at the bottom*/
   #root {
     display: flex;
     flex-direction: column;

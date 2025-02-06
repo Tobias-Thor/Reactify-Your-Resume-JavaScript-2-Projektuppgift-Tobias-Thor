@@ -56,3 +56,4 @@ const Footer = ({ footerData }) => { // Receive footerData prop
 };
 
 export default Footer;
+
