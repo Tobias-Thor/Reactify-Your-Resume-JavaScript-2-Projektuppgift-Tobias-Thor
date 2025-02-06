@@ -1,7 +1,11 @@
+import { useState } from "react";
 import ContactForm from "../components/ContactForm"; // Imports the ContactForm component
 import "./../styles/Contact.css"; 
 
 const Contact = () => {
+  // Optionally, you can use state to manage the user name dynamically
+  const [userName, setUserName] = useState("Tobias Thor");
+
   return (
     <section className="contact">
       {/* Page title */}
@@ -17,9 +21,8 @@ const Contact = () => {
         <p><strong>GitHub:</strong> <a href="https://github.com/Tobias-Thor" target="_blank" rel="noopener noreferrer">Min GitHub</a></p>
       </address><br></br>
       
-
-      {/* ContactForm component handles input fields and form submission */}
-      <ContactForm />
+      {/* Pass the userName as a prop to the ContactForm component */}
+      <ContactForm userName={userName} />
     </section>
   );
 };

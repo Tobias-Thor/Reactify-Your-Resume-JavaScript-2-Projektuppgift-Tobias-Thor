@@ -1,6 +1,36 @@
 import SkillsTable from "../components/SkillsTable"; // Import the SkillsTable component
 import "./../styles/About.css"; 
 
+const skills = [
+  { skill: "React", level: "⭐" },
+  { skill: "Node.js", level: "⭐" },
+  { skill: "TypeScript", level: "🟢" },
+  { skill: "JavaScript", level: "⭐" },
+  { skill: "Tailwind", level: "⭐" },
+  { skill: "SASS/SCSS", level: "⭐" },
+  { skill: "CSS", level: "⭐⭐" },
+  { skill: "HTML", level: "⭐⭐" },
+  { skill: "SEO", level: "⭐" },
+  { skill: "WCAG", level: "⭐⭐" },
+  { skill: "SQL", level: "⭐" },
+  { skill: "PHP", level: "⭐" },
+  { skill: "C#", level: "🟢" },
+  { skill: "GitHub", level: "⭐" },
+  { skill: "VS Code", level: "⭐⭐" },
+  { skill: "Trello", level: "⭐⭐" },
+  { skill: "Figma", level: "⭐" },
+  { skill: "M365", level: "⭐⭐" },
+  { skill: "Photoshop", level: "⭐" },
+  { skill: "Audition", level: "⭐" },
+  { skill: "bash", level: "⭐" },
+  { skill: "PowerShell", level: "⭐" },
+  { skill: "Windows Server", level: "⭐⭐" },
+  { skill: "Hyper-V", level: "⭐⭐" },
+  { skill: "Active Directory", level: "⭐⭐" },
+  { skill: "RAID/SAN/NAS", level: "⭐⭐" },
+  { skill: "Nätverk", level: "⭐⭐" },
+];
+
 const About = () => {
   return (
     <section className="about">
@@ -20,7 +50,8 @@ const About = () => {
       /><br></br>
 
       <h2>Mina kompetenser</h2>
-      <SkillsTable /> {/* Using the SkillsTable component here */}<br></br>
+      {/* Passing the skills data to SkillsTable as props */}
+      <SkillsTable skills={skills} /><br></br>
 
       <h2>Mitt CV</h2>
       
