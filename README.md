@@ -1,6 +1,6 @@
 # Min Portfolio - Tobias Thor
 
-## Beskrivning
+## Beskrivning (SCROLL DOWN FOR ENGLISH)
 Detta projekt är en interaktiv och responsiv single-page application (SPA) byggd med React. Syftet är att fungera som min personliga portfolio och CV.
 
 ### Funktioner
@@ -19,6 +19,31 @@ Detta projekt är en interaktiv och responsiv single-page application (SPA) bygg
 - **React Icons** (ikoner för sociala medier och UI-element)
 - **HTML, JavaScript**
 - **VS Code** (utvecklingsmiljö)
+
+## Innan du börjar, se till att du har följande installerat:
+- [Node.js](https://nodejs.org/) (version 16 eller senare rekommenderas)
+- npm (ingår i Node.js)
+- En modern webbläsare
+
+## Installera nödvändiga beroenden
+npm install
+
+## Projektet använder bland annat följande paket:
+react
+react-dom
+react-router-dom
+redux
+react-redux
+@reduxjs/toolkit
+react-icons
+
+## Bygga för produktion
+För att skapa en produktionsfärdig build (OM DU VILL), kör:
+sh
+Kopiera
+Redigera
+npm run build
+Detta genererar en build-mapp med optimerad kod redo att distribueras.
 
 ## Installation & Körning
 1. Klona detta repository:
@@ -48,7 +73,7 @@ Nu kan du besöka applikationen på `http://localhost:3000/`
 
 ---
 
-# My Portfolio - Tobias Thor
+# My Portfolio - Tobias Thor (SCROLL UP FOR SWEDISH)
 
 ## Description
 This project is an interactive and responsive single-page application (SPA) built with React. It serves as my personal portfolio and CV.
@@ -69,6 +94,35 @@ This project is an interactive and responsive single-page application (SPA) buil
 - **React Icons** (social media and UI icons)
 - **HTML, JavaScript**
 - **VS Code** (development environment)
+
+## System Requirements
+Before getting started, make sure you have the following installed:
+- [Node.js](https://nodejs.org/) (version 16 or later recommended)
+- npm (included with Node.js)
+- A modern web browser
+
+## Install necessary dependencies
+sh
+Kopiera
+Redigera
+npm install
+
+## This project uses the following packages:
+react
+react-dom
+react-router-dom
+redux
+react-redux
+@reduxjs/toolkit
+react-icons
+
+## Build for Production
+To create a production-ready build (IF YOU WANT TO), run:
+sh
+Kopiera
+Redigera
+npm run build
+This will generate a build folder with optimized code ready for deployment.
 
 ## Installation & Running
 1. Clone this repository:
