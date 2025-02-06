@@ -17,7 +17,7 @@ const projects = [
     description: "Ett grupparbete och examinationsuppgift i kursen Arbetsmetodik för utvecklare 2", 
     github: "https://github.com/Tobias-Thor/Arbetsmetodik-2-Examinationsgrupp-3", 
     /* liveLink: "#",  Add a live link if applicable */
-    projectImage: "i/../images/bbq.png"
+    projectImage: "./../images/bbq.png"
   },
   {
     id: 3,

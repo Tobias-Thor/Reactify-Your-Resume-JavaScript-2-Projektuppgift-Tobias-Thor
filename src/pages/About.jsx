@@ -44,7 +44,7 @@ const About = () => {
 
       {/* for "selfie" image */}
       <img 
-        src="./images/90909-500px.png" 
+        src="./../images/90909-500px.png" 
         alt="Tobias Thor" 
         className="profile-image" 
       /><br></br>
@@ -160,7 +160,5 @@ const About = () => {
     </section>
   );
 };
-
-export default About;
 
 export default About;
