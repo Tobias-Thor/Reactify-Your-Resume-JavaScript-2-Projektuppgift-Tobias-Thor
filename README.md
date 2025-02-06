@@ -104,4 +104,4 @@ Currently, two official plugins are available:
 @vitejs/plugin-react uses Babel for Fast Refresh
 @vitejs/plugin-react-swc uses SWC for Fast Refresh =======
 Reactify-Your-Resume-JavaScript-2-Projektuppgift-Tobias-Thor
-4741536b5146ce4e8b6aaf06da9eb8006fa6becegi
+4741536b5146ce4e8b6aaf06da9eb8006fa6bece
